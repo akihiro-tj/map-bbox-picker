@@ -11,14 +11,15 @@ type Toggle = {
 
 const Toggle: FC<Toggle> = ({ toggleOn, onChange, label }) => {
   return (
-    <button className={style.toggle} onClick={onChange}>
+    <div className={style.toggle}>
       <span className={style.label}>{label}</span>
-      <div
+      <button
         className={clsx(style.button, {
           [style.on]: toggleOn,
         })}
-      ></div>
-    </button>
+        onClick={onChange}
+      />
+    </div>
   );
 };
 
