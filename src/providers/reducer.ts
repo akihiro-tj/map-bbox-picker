@@ -26,7 +26,7 @@ type UpdateViewStateCallback = (prev: ViewStateProps) => ViewStateProps;
 // Action types
 const UPDATE_VIEW_STATE = 'UPDATE_VIEW_STATE';
 const UPDATE_DRAG_ENABLED = 'UPDATE_DRAG_ENABLED';
-const UPDATE_RECT_BBOX = 'UPDATE_RECT_BBOX';
+const UPDATE_BBOX = 'UPDATE_BBOX';
 
 // Actions
 export const updateViewState = (
@@ -38,7 +38,7 @@ export const updateDragEnabled = (arg: boolean) => {
   return { type: UPDATE_DRAG_ENABLED, payload: arg };
 };
 export const updateBBox = (arg?: BBox) => {
-  return { type: UPDATE_RECT_BBOX, payload: arg };
+  return { type: UPDATE_BBOX, payload: arg };
 };
 
 export type Action = ReturnType<
@@ -67,7 +67,7 @@ export const reducer = (state: AppState, action: Action): AppState => {
       };
     }
 
-    case UPDATE_RECT_BBOX: {
+    case UPDATE_BBOX: {
       return {
         ...state,
         bbox: action.payload as BBox | undefined,
