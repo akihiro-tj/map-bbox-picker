@@ -9,9 +9,10 @@
   background-color: var(--color-black);
 }
 
-.value {
+.bbox {
+  width: 100%;
   margin-bottom: 0;
   color: var(--color-white);
-  text-align: right;
+  text-align: left;
   cursor: text;
 }

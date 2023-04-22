@@ -24,10 +24,13 @@ const Panel: FC = () => {
         label={`Area selection: ${dragEnabled ? 'On' : 'Off'}`}
       />
       {bbox && (
-        <p className={style.value}>
-          {[bbox.minLon, bbox.minLat, bbox.maxLon, bbox.maxLat]
-            .map(value => round(value, 2))
-            .join(', ')}
+        <p className={style.bbox}>
+          <div>{'{'}</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;minLon: {round(bbox.minLon, 2)},</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;minLat: {round(bbox.minLat, 2)},</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;maxLon: {round(bbox.maxLon, 2)},</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;maxLat: {round(bbox.maxLat, 2)},</div>
+          <div>{'}'}</div>
         </p>
       )}
     </div>
