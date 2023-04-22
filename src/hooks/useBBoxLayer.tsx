@@ -114,7 +114,7 @@ const useBBoxLayer = (layerID: string) => {
       id: layerID,
       data,
       filled: true,
-      getFillColor: [255, 0, 0, 255 * 0.5],
+      getFillColor: [255, 100, 100, 255 * 0.7],
     });
   }, [layerID, bbox]);
 

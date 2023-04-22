@@ -21,7 +21,12 @@ const Attribution: FC<Attribution> = ({ contributors }) => {
         {contributors.map(contributor => (
           <span key={contributor.name} className={style.contributor}>
             {contributor.prefix && <span>{contributor.prefix}</span>}
-            <a href={contributor.url} target="_blank" rel="noreferrer">
+            <a
+              className={style.link}
+              href={contributor.url}
+              target="_blank"
+              rel="noreferrer"
+            >
               {contributor.name}
             </a>
             {contributor.suffix && <span>{contributor.suffix}</span>}
