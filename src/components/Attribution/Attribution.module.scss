@@ -1,0 +1,36 @@
+.attribution {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  background: var(--color-gray);
+}
+
+.copyright {
+  margin-right: 0.25em;
+  font-size: 1rem;
+}
+
+.contributors {
+  display: flex;
+  gap: 0.5em;
+}
+
+.contributor {
+  position: relative;
+
+  &:not(:nth-last-child(1)) {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: block;
+      content: ',';
+    }
+  }
+}

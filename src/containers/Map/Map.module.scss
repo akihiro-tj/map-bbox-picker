@@ -1,0 +1,10 @@
+.map {
+  height: 100vh;
+  background-color: #fff;
+
+  &.__drag-enabled {
+    :global(#deckgl-overlay) {
+      cursor: default;
+    }
+  }
+}
