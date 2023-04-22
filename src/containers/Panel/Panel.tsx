@@ -26,10 +26,19 @@ const Panel: FC = () => {
       {bbox && (
         <p className={style.bbox}>
           <div>{'{'}</div>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;minLon: {round(bbox.minLon, 2)},</div>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;minLat: {round(bbox.minLat, 2)},</div>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;maxLon: {round(bbox.maxLon, 2)},</div>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;maxLat: {round(bbox.maxLat, 2)},</div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;{`"minLon": ${round(bbox.minLon, 2)},`}
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;{`"minLat": ${round(bbox.minLat, 2)},`}
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;{`"maxLon": ${round(bbox.maxLon, 2)},`}
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;{`"maxLat": ${round(bbox.maxLat, 2)}`}
+          </div>
+
           <div>{'}'}</div>
         </p>
       )}
