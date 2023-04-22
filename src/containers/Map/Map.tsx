@@ -20,7 +20,7 @@ const Map: FC = () => {
   const basemapLayer = useTileLayer(
     'base-map',
     basemap.url,
-    dragEnabled ? 0.8 : 1,
+    dragEnabled ? 0.7 : 1,
   );
   const [bboxLayer, handleDragStart, handleDrag, handleDragEnd] =
     useBBoxLayer('bbox');
