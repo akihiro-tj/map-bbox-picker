@@ -3,7 +3,7 @@ import { BitmapLayer } from '@deck.gl/layers';
 import { useMemo } from 'react';
 
 const useTileLayer = (layerID: string, tileURL: string, opacity = 1) => {
-  return useMemo(
+  const layer = useMemo(
     () =>
       new TileLayer({
         id: layerID,
@@ -24,6 +24,8 @@ const useTileLayer = (layerID: string, tileURL: string, opacity = 1) => {
       }),
     [layerID, tileURL, opacity],
   );
+
+  return layer;
 };
 
 export default useTileLayer;
