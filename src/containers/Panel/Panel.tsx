@@ -21,7 +21,7 @@ const Panel: FC = () => {
       <Toggle
         toggleOn={dragEnabled}
         onChange={handleToggleChange}
-        label={`Area selection: ${dragEnabled ? 'On' : 'Off'}`}
+        label="Area selection"
       />
       {bbox && (
         <p className={style.bbox}>
