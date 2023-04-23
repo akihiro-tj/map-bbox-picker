@@ -12,7 +12,7 @@ type TmpBBox = {
   currentLat?: number;
 };
 
-const initialTmpBBox = {
+const initialTmpBBox: TmpBBox = {
   initialLon: undefined,
   initialLat: undefined,
   currentLon: undefined,
