@@ -1,33 +1,6 @@
-# Vite-deck.gl-TypeScript Boilerplate
+# Map BBox Picker
 
-## Setup
+A tool for getting a bounding box on the map.
 
-```bash
-$ yarn
-```
-
-## Development
-
-```bash
-$ yarn dev
-```
-
-http://localhost:8000/
-
-## Build
-
-```bash
-$ yarn build
-```
-
-## Test
-
-```bash
-$ yarn test
-```
-
-## Lint
-
-```bash
-$ yarn fix
-```
+![](https://user-images.githubusercontent.com/50857720/233822279-cee6e4b2-b951-466d-a069-291c221e679e.png)
+![](https://user-images.githubusercontent.com/50857720/233822282-8c6a63a0-6f7b-43ea-95af-ff6a167928d4.png)
