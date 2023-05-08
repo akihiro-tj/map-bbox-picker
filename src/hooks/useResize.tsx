@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 const useResize = (callback: () => void, interval = 100) => {
   useEffect(() => {
-    window.setTimeout(callback, interval);
-  }, [callback, interval]);
+    callback();
+  }, [callback]);
 
   useEffect(() => {
     let timeoutID: number;
