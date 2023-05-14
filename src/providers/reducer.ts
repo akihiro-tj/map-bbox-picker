@@ -32,13 +32,22 @@ const UPDATE_BBOX = 'UPDATE_BBOX';
 export const updateViewState = (
   arg: ViewStateProps | UpdateViewStateCallback,
 ) => {
-  return { type: UPDATE_VIEW_STATE, payload: arg };
+  return {
+    type: UPDATE_VIEW_STATE,
+    payload: arg,
+  };
 };
-export const updateDragEnabled = (arg: boolean) => {
-  return { type: UPDATE_DRAG_ENABLED, payload: arg };
+export const updateDragEnabled = (dragEnabled: boolean) => {
+  return {
+    type: UPDATE_DRAG_ENABLED,
+    payload: dragEnabled,
+  };
 };
-export const updateBBox = (arg?: BBox) => {
-  return { type: UPDATE_BBOX, payload: arg };
+export const updateBBox = (bbox?: BBox) => {
+  return {
+    type: UPDATE_BBOX,
+    payload: bbox,
+  };
 };
 
 export type Action = ReturnType<
