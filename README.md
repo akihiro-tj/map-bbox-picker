@@ -1,8 +1,6 @@
 # Map BBox Picker
 
-A tool for getting a bounding box on the map.
-
 Link: https://akihiro-tj.github.io/map-bbox-picker/
 
-![](https://user-images.githubusercontent.com/50857720/233822279-cee6e4b2-b951-466d-a069-291c221e679e.png)
-![](https://user-images.githubusercontent.com/50857720/233822282-8c6a63a0-6f7b-43ea-95af-ff6a167928d4.png)
+![](https://user-images.githubusercontent.com/50857720/238198563-4089f081-af53-40d9-bc38-97bba8c0c4c2.png)
+![](https://user-images.githubusercontent.com/50857720/238198559-34ee6d96-6c6d-4b2f-8e39-93fad7525a02.png)
