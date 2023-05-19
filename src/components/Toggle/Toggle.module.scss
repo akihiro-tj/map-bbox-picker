@@ -13,7 +13,7 @@ $scale: 1.5;
   height: calc(1.5rem * $scale);
   padding: 0;
   cursor: pointer;
-  background-color: var(--color-gray1);
+  background-color: $color_gray1;
   border: none;
   border-radius: 9999px;
 
@@ -28,18 +28,18 @@ $scale: 1.5;
     width: calc(1.25rem * $scale);
     height: calc(1.25rem * $scale);
     content: '';
-    background-color: var(--color-white);
-    border-color: var(--color-gray2);
+    background-color: $color_white;
+    border-color: $color_gray2;
     border-width: 1px;
     border-radius: 9999px;
     transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &.__on {
-    background-color: var(--color-blue);
+    background-color: $color_blue;
 
     &::after {
-      border-color: var(--color-white);
+      border-color: $color_white;
       transform: translateX(100%);
     }
   }
@@ -47,5 +47,5 @@ $scale: 1.5;
 
 .label {
   font-size: 1rem;
-  color: var(--color-white);
+  color: $color_white;
 }

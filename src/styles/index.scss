@@ -1,10 +1,2 @@
-@import 'sanitize.css';
-
-@import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap';
-
-@import './variables';
-
-body {
-  font-family: var(--font-family);
-  color: var(--color-text);
-}
+@import './shared';
+@import './global';

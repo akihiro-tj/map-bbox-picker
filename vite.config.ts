@@ -20,6 +20,12 @@ export default defineConfig({
       scopeBehaviour: 'local',
       localsConvention: 'camelCaseOnly',
     },
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/styles/shared";',
+        includePaths: ['src/styles'],
+      },
+    },
     postcss: {
       plugins: [autoprefixer],
     },
