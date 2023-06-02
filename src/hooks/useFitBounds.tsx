@@ -34,15 +34,16 @@ const useFitBounds = (
   }, [bbox, ref, padding]);
 
   useEffect(() => {
-    const initializeViewport = () => {
+    const intervalID = window.setInterval(() => {
       const initialViewport = updateViewport();
       if (initialViewport) {
-        document.body.setAttribute('data-initialized', 'true');
-      } else {
-        window.setTimeout(initializeViewport, 100);
+        window.clearInterval(intervalID);
       }
+    }, 100);
+
+    return () => {
+      window.clearInterval(intervalID);
     };
-    initializeViewport();
   }, [updateViewport]);
 
   useEffect(() => {
