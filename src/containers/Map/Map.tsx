@@ -18,7 +18,7 @@ const Map: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const basemapLayer = useTileLayer(
-    'base-map',
+    'basemap',
     basemap.url,
     dragEnabled ? 0.7 : 1,
   );
