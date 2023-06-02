@@ -31,7 +31,6 @@ const Map: FC = () => {
   }: {
     viewState: ViewStateProps;
   }) => {
-    if (!dispatch) return;
     dispatch(updateViewState(viewState));
   };
 

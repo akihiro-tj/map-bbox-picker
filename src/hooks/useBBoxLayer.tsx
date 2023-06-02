@@ -32,8 +32,6 @@ const useBBoxLayer = (layerID: string) => {
   }, [dragEnabled]);
 
   useEffect(() => {
-    if (!dispatch) return;
-
     if (
       tmpBBox.initialLon === undefined ||
       tmpBBox.currentLon === undefined ||

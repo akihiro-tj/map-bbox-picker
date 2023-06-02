@@ -46,7 +46,7 @@ const useFitBounds = (
   }, [updateViewport]);
 
   useEffect(() => {
-    if (!dispatch || !viewport) return;
+    if (!viewport) return;
 
     const { longitude, latitude, zoom } = viewport as {
       longitude: number;

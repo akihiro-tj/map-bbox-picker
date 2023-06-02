@@ -7,9 +7,9 @@ type AppContextProvider = {
 };
 
 export const AppContext = createContext<AppState>(initialState);
-export const AppUpdateContext = createContext<Dispatch<Action> | undefined>(
-  undefined,
-);
+export const AppUpdateContext = createContext<Dispatch<Action>>(() => {
+  return;
+});
 
 const AppContextProvider: FC<AppContextProvider> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);

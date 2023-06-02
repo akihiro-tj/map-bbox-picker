@@ -12,7 +12,6 @@ const Panel: FC = () => {
   const dispatch = useContext(AppUpdateContext);
 
   const handleToggleChange: MouseEventHandler<HTMLButtonElement> = () => {
-    if (!dispatch) return;
     dispatch(updateDragEnabled(!dragEnabled));
   };
 
