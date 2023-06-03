@@ -23,7 +23,7 @@ const Panel: FC = () => {
         label="Area selection"
       />
       {bbox && (
-        <p className={style.bbox}>
+        <div className={style.bbox}>
           <div>{'{'}</div>
           <div>
             &nbsp;&nbsp;&nbsp;&nbsp;{`"minLon": "${round(bbox.minLon, 2)}",`}
@@ -38,7 +38,7 @@ const Panel: FC = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;{`"maxLat": "${round(bbox.maxLat, 2)}"`}
           </div>
           <div>{'}'}</div>
-        </p>
+        </div>
       )}
     </div>
   );
