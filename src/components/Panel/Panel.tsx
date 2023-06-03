@@ -37,7 +37,6 @@ const Panel: FC = () => {
           <div>
             &nbsp;&nbsp;&nbsp;&nbsp;{`"maxLat": "${round(bbox.maxLat, 2)}"`}
           </div>
-
           <div>{'}'}</div>
         </p>
       )}
