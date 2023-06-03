@@ -1,18 +1,20 @@
 import { createContext, Dispatch, FC, ReactNode, useReducer } from 'react';
 
-import { Action, AppState, initialState, reducer } from './reducer';
+import { Action } from '../types';
+
+import { AppState, initialAppState, reducer } from './reducer';
 
 type AppContextProvider = {
   children: ReactNode;
 };
 
-export const AppContext = createContext<AppState>(initialState);
+export const AppContext = createContext<AppState>(initialAppState);
 export const AppUpdateContext = createContext<Dispatch<Action>>(() => {
   return;
 });
 
 const AppContextProvider: FC<AppContextProvider> = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialAppState);
 
   return (
     <AppContext.Provider value={state}>

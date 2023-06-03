@@ -1,6 +1,6 @@
 import { ViewStateProps } from '@deck.gl/core/lib/deck';
 
-import { BBox } from '../types';
+import { Action, BBox } from '../types';
 
 export type AppState = {
   viewState: ViewStateProps;
@@ -8,7 +8,7 @@ export type AppState = {
   bbox?: BBox;
 };
 
-export const initialState: AppState = {
+export const initialAppState: AppState = {
   viewState: {
     longitude: -122.4,
     latitude: 37.74,
@@ -21,14 +21,13 @@ export const initialState: AppState = {
   bbox: undefined,
 };
 
-type UpdateViewStateCallback = (prev: ViewStateProps) => ViewStateProps;
-
 // Action types
 const UPDATE_VIEW_STATE = 'UPDATE_VIEW_STATE';
 const UPDATE_DRAG_ENABLED = 'UPDATE_DRAG_ENABLED';
 const UPDATE_BBOX = 'UPDATE_BBOX';
 
 // Actions
+type UpdateViewStateCallback = (prev: ViewStateProps) => ViewStateProps;
 export const updateViewState = (
   arg: ViewStateProps | UpdateViewStateCallback,
 ) => {
@@ -37,22 +36,20 @@ export const updateViewState = (
     payload: arg,
   };
 };
+
 export const updateDragEnabled = (dragEnabled: boolean) => {
   return {
     type: UPDATE_DRAG_ENABLED,
     payload: dragEnabled,
   };
 };
+
 export const updateBBox = (bbox?: BBox) => {
   return {
     type: UPDATE_BBOX,
     payload: bbox,
   };
 };
-
-export type Action = ReturnType<
-  typeof updateViewState | typeof updateDragEnabled | typeof updateBBox
->;
 
 // Reducer
 export const reducer = (state: AppState, action: Action): AppState => {
@@ -72,14 +69,14 @@ export const reducer = (state: AppState, action: Action): AppState => {
     case UPDATE_DRAG_ENABLED: {
       return {
         ...state,
-        dragEnabled: action.payload as boolean,
+        dragEnabled: action.payload,
       };
     }
 
     case UPDATE_BBOX: {
       return {
         ...state,
-        bbox: action.payload as BBox | undefined,
+        bbox: action.payload,
       };
     }
 
