@@ -22,8 +22,10 @@ const Map: FC = () => {
     basemap.url,
     dragEnabled ? 0.7 : 1,
   );
+
   const [bboxLayer, handleDragStart, handleDrag, handleDragEnd] =
     useBBoxLayer('bbox');
+
   useFitBounds(ref, japanBBox);
 
   const handleViewStateChange = ({
