@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import DeckGL from 'deck.gl';
 import { FC, useContext, useRef } from 'react';
 
-import { basemap, japanBBox } from '../../constants';
+import { basemap, japanBBox } from '../../constant';
 import useBBoxLayer from '../../hooks/useBBoxLayer';
 import useFitBounds from '../../hooks/useFitBounds';
 import useTileLayer from '../../hooks/useTileLayer';
