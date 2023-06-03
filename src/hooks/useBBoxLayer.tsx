@@ -2,8 +2,8 @@ import { GeoJsonLayer } from '@deck.gl/layers';
 import { PickInfo } from 'deck.gl';
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
-import { AppContext, AppUpdateContext } from '../providers/AppContext';
-import { updateBBox } from '../providers/reducer';
+import { AppContext, AppUpdateContext } from '../providers/App/AppContext';
+import { updateBBox } from '../providers/App/appReducer';
 
 type TmpBBox = {
   initialLon?: number;

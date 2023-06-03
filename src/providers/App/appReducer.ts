@@ -1,6 +1,6 @@
 import { ViewStateProps } from '@deck.gl/core/lib/deck';
 
-import { Action, BBox } from '../types';
+import { Action, BBox } from '../../types';
 
 export type AppState = {
   viewState: ViewStateProps;

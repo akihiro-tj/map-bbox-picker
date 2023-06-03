@@ -1,8 +1,8 @@
 import { createContext, Dispatch, FC, ReactNode, useReducer } from 'react';
 
-import { Action } from '../types';
+import { Action } from '../../types';
 
-import { AppState, initialAppState, reducer } from './reducer';
+import { AppState, initialAppState, reducer } from './appReducer';
 
 type AppContextProvider = {
   children: ReactNode;
