@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import Attribution from './components/Attribution/Attribution';
 import Container from './components/Container/Container';
+import Map from './components/Map/Map';
+import Panel from './components/Panel/Panel';
 import { basemap } from './constant';
-import Map from './containers/Map/Map';
-import Panel from './containers/Panel/Panel';
 import './styles/index.scss';
 
 const App: FC = () => {

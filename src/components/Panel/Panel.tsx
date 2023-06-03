@@ -1,9 +1,9 @@
 import { FC, MouseEventHandler, useContext } from 'react';
 
-import Toggle from '../../components/Toggle/Toggle';
 import { AppContext, AppUpdateContext } from '../../providers/App/AppContext';
 import { updateDragEnabled } from '../../providers/App/appReducer';
 import { round } from '../../util';
+import Toggle from '../Toggle/Toggle';
 
 import style from './Panel.module.scss';
 
