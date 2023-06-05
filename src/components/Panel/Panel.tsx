@@ -1,6 +1,6 @@
 import { FC, MouseEventHandler, useContext } from 'react';
 
-import { AppContext, AppUpdateContext } from '../../providers/App/AppContext';
+import { AppContext, AppUpdateContext } from '../../providers/app/AppContext';
 import { updateDragEnabled } from '../../providers/App/appReducer';
 import { round } from '../../util';
 import Toggle from '../Toggle/Toggle';

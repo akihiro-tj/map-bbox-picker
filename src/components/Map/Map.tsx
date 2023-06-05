@@ -7,7 +7,7 @@ import { basemap, japanBBox } from '../../constant';
 import useBBoxLayer from '../../hooks/useBBoxLayer';
 import useFitBounds from '../../hooks/useFitBounds';
 import useTileLayer from '../../hooks/useTileLayer';
-import { AppContext, AppUpdateContext } from '../../providers/App/AppContext';
+import { AppContext, AppUpdateContext } from '../../providers/app/AppContext';
 import { updateViewState } from '../../providers/App/appReducer';
 
 import style from './Map.module.scss';
