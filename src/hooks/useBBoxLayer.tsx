@@ -3,7 +3,7 @@ import { PickInfo } from 'deck.gl';
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 import { AppContext, AppUpdateContext } from '../providers/app/AppContext';
-import { updateBBox } from '../providers/App/appReducer';
+import { updateBBox } from '../providers/app/appReducer';
 
 type TmpBBox = {
   initialLon?: number;

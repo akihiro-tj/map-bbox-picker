@@ -2,7 +2,7 @@ import { WebMercatorViewport } from '@deck.gl/core';
 import { RefObject, useCallback, useContext, useEffect, useState } from 'react';
 
 import { AppUpdateContext } from '../providers/app/AppContext';
-import { updateViewState } from '../providers/App/appReducer';
+import { updateViewState } from '../providers/app/appReducer';
 
 import useResize from './useResize';
 

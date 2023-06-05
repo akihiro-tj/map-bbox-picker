@@ -8,7 +8,7 @@ import useBBoxLayer from '../../hooks/useBBoxLayer';
 import useFitBounds from '../../hooks/useFitBounds';
 import useTileLayer from '../../hooks/useTileLayer';
 import { AppContext, AppUpdateContext } from '../../providers/app/AppContext';
-import { updateViewState } from '../../providers/App/appReducer';
+import { updateViewState } from '../../providers/app/appReducer';
 
 import style from './Map.module.scss';
 
